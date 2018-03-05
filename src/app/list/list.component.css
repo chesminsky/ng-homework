@@ -1,0 +1,16 @@
+.activity-desc {
+    width: 70%;
+}
+
+.activity-img {
+    width: 30%;
+}
+
+.activity-img img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.activity-desc h5 {
+    cursor: pointer;
+}
