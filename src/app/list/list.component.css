@@ -14,3 +14,7 @@
 .activity-desc h5 {
     cursor: pointer;
 }
+
+.ele-strip li.is-selected a {
+    text-decoration: underline;
+}

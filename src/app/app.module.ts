@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { InfoComponent } from './info/info.component';
 import { WeatherComponent } from './weather/weather.component';
+import { PlacesFilterPipe } from './places-filter.pipe';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { WeatherComponent } from './weather/weather.component';
     AppComponent,
     ListComponent,
     InfoComponent,
-    WeatherComponent
+    WeatherComponent,
+    PlacesFilterPipe
   ],
   imports: [
     BrowserModule

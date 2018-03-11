@@ -86,7 +86,7 @@ const places = [{
         "followers": 8334,
         "following": 2203
     },
-    "type": "appartments",
+    "type": "apartments",
     "description": "Cras non velit nec nisi vulputate nonummy."
 }, {
     "id": 5,
@@ -118,7 +118,7 @@ const places = [{
         "followers": 5201,
         "following": 5255
     },
-    "type": "appartments",
+    "type": "apartments",
     "description": "Mauris ullamcorper purus sit amet nulla."
 }, {
     "id": 7,
@@ -134,7 +134,7 @@ const places = [{
         "followers": 1689,
         "following": 5649
     },
-    "type": "appartments",
+    "type": "apartments",
     "description": "Cras in purus eu magna vulputate luctus."
 }, {
     "id": 8,
@@ -182,7 +182,7 @@ const places = [{
         "followers": 6720,
         "following": 7677
     },
-    "type": "appartments",
+    "type": "apartments",
     "description": "Mauris lacinia sapien quis libero."
 }];
 

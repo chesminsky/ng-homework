@@ -4,17 +4,9 @@
 <div class="element-left-bottom">
   <div class="ele-strip">
     <ul>
-      <li>
-        <a href="#">Hotel</a>
-      </li>
-      <li>
-        <a href="#">Fishing</a>
-      </li>
-      <li>
-        <a href="#">Tours</a>
-      </li>
-      <li class="anc-bor">
-        <a href="#">Weather</a>
+      <li *ngFor="let type of types; last as isLast;"
+          [ngClass]="{'anc-bor': isLast, 'is-selected': currentType?.value === type.value}">
+        <a href (click)="toggleType($event, type)">{{type.name}}</a>
       </li>
     </ul>
   </div>
@@ -25,11 +17,14 @@
       <div class="scrollbar" id="style-2">
 
         <div class="activity-row"
-             *ngFor="let place of places">
+             *ngFor="let place of places | placesFilter: currentType?.value;">
           <div class="activity-desc" (click)="onSelect(place)">
             <h5>
               {{place.title}}
             </h5>
+            <p>
+              type: {{getTypeName(place.type)}}
+            </p>
             <p>
               {{place.description}}
             </p>
